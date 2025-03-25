@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-rbsA2VBKQfny6o5pNcFNWfYRpO23dLxX2Fh5Hap4Rt/5D06t0Xc/6bL5xGJ1w8vN" crossorigin="anonymous"></script>
+  <style>
+    .A {
+      background-color: rgb(233, 225, 225);
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+    }
+    .navbar-brand
+     { margin-right: 70px; color: rgb(0, 0, 0); 
+    }
+    .nav-item .nav-link 
+    { color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+  font-size: 23PX;}
+    .page:hover 
+    { color: #740ceb; }
+    .navbar-toggler { border-color: #000000; }
+    .navbar-toggler-icon { background-color: #000000; }
+    .nav-link:hover { color: #d32384; transition: color 0.3s; }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .skill {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .outer {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        position: relative;
+    }
+
+    .inner {
+        width: 100px;
+        height: 100px;
+        background: #a78e8e;
+        border-radius: 50%;
+        line-height: 100px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 18px;
+    }
+
+    h5 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="A">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="pixelcut-export-min (1).png">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ABOUT">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#SKILLS">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Project">Project</a></li>
+           
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+     <center> <img src="PUGAZH.png" alt="Profile" style="border-radius: 700px;width: 200px;"></center>
+<!-- Add Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<!-- Main Container -->
+<div class="container text-center text-light">
+    <h1 class="display-1" style="font-size:70px; color:#000000;">
+        Hi, I'M <br>
+        <b id="typed-name" style="font-size: 90px; font-family: 'Righteous', cursive; color: #000000;"></b>
+    </h1>
+    <h4 id="typed-title" style="font-size: 35px; color: #797777; font-family: 'Righteous', cursive;"></h4>
+</div>
+
+<!-- JavaScript for Typing Effect -->
+<script>
+    let nameText = "PUGAZHENTHI";
+    let titleText = "Full Stack Developer";
+    let indexName = 0, indexTitle = 0;
+
+    function typeEffect(elementId, text, index, callback) {
+        if (index < text.length) {
+            document.getElementById(elementId).innerHTML += text.charAt(index);
+            setTimeout(() => typeEffect(elementId, text, index + 1, callback), 150);
+        } else if (callback) {
+            setTimeout(callback, 0); // Delay before showing title
+        }
+    }
+
+    window.onload = function () {
+        typeEffect("typed-name", nameText, indexName, () => {
+            typeEffect("typed-title", titleText, indexTitle);
+        });
+    };
+</script>
+
+      <!-- Social Icons -->
+    <center>  <div class="mt-4 mb-5">
+        <a href="https://www.linkedin.com/in/your_linkedin" target="_blank" class="me-3">
+          <i class="fab fa-linkedin fa-3x" style="color: #050505;"></i>
+        </a>      
+          <a href="https://github.com/your_github" target="_blank">
+              <i class="fab fa-github fa-3x" style="color: #050505;"></i>
+          </a></center>
+          <!-- Font Awesome Icons -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+   <div style="display: flex; gap: 10px; align-items: center;margin-left: 570px;margin-top:20PX;">
+    <li class="nav-item" style="list-style: none;">
+        <button class="btn btn-light text-dark border border-dark" onclick="window.location.href='PugazhenthiSResume (4).pdf'" download>
+            <b>Download CV</b>
+        </button>
+    </li>
+    <li class="nav-item" style="list-style: none;">
+        <button class="btn btn-light text-dark border border-dark" onclick="window.location.href='#CONTACT'">
+            <b>Contact</b>
+        </button>
+    </li>
+</div>
+      </div>
+  </div>
+  <section id="ABOUT" style="background-color: rgb(236, 236, 236); padding: 50px 0; ">
+    <div class="container">
+        <div class="text-center">
+            <h4 style="background-color: #000000; display: inline-block; padding: 10px 20px; border-radius: 5px; color: white;">
+                𝔸𝔹𝕆𝕌𝕋 𝕄𝔼
+            </h4>
+        </div>
+        <div class="col-md-12 mt-3 text-center">
+          <p style="font-size: 19px; line-height: 1.6; max-width: 900px; margin: auto;">
+            Hi! I'm <b>Pugazhenthi</b>, a passionate <b style="color: rgb(216, 62, 15);">Full-Stack Developer</b> with expertise in both front-end and back-end technologies. 
+            I specialize in crafting dynamic and responsive web applications that deliver seamless user experiences. 
+            With strong proficiency in <b style="color:  rgb(216, 62, 15);">HTML, CSS, JavaScript, Python, React.js, Boostrap and Django</b>, I build scalable web solutions 
+            while ensuring robust performance and security. My ability to design intuitive interfaces and implement powerful 
+            server-side functionalities allows me to create efficient, high-performing applications.
+            I thrive on learning new technologies, solving complex problems, and collaborating with teams to bring innovative 
+            ideas to life. My goal is to develop solutions that not only meet business objectives but also enhance user engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Skills Section -->
+<section id="SKILLS" style="background-color: #f8f9fa; padding: 50px 0;">
+    <div class="container text-center">
+        <h2 style="font-family: 'Poppins', sans-serif; font-weight: 700; color: #333;">MY SKILLS</h2>
+        <div class="row mt-4">
+            <!-- Skill Item -->
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="95"></div>
+                        </div>
+                    </div>
+                    <h5>HTML</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <h5>CSS</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <h5>JavaScript</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <h5>React.js</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <h5>Django</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="70"></div>
+                        </div>
+                    </div>
+                    <h5>SQL</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <h5>Python</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="progress-circle" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <h5>Bootstrap</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let circles = document.querySelectorAll('.progress-circle');
+
+        circles.forEach(circle => {
+            let percent = circle.getAttribute("data-percent");
+            circle.innerHTML = percent + "%";
+        });
+    });
+</script>
+cc
+
+<section id="CONTACT" class="bg-dark text-white text-center p-4">
+  <div class="container col-md-6 mx-auto">
+      <div class="card bg-secondary p-4">
+          <h4 class="mb-3">Contact Me</h4>
+          <p>Pugazhenthi, Theni, Tamil Nadu, India</p>
+          <p>Phone: 7397565714</p>
+          <p>Email: pugazhns007@gmail.com</p>
+          <form action="pugazhns007@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Your Name" class="form-control mb-2" required>
+              <input type="email" name="email" placeholder="Your Email" class="form-control mb-2" required>
+              <textarea name="message" placeholder="Your Message" class="form-control mb-3" rows="3" required></textarea>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>
